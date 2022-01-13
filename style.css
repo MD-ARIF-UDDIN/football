@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Moon+Dance&family=Poppins:wght@500&family=Quicksand&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+.container {
+  background-color: #ffffff;
+  width: 870px;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 21px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+hr {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 27px;
+}
+.top-players {
+  margin-bottom: 30px;
+}
+.section-title {
+  color: #562eff;
+  font-size: 24px;
+  margin-top: 3px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  width: 56px;
+  height: 56px;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
+}
+.club {
+  display: flex;
+}
+.club img {
+  width: 150px;
+  height: 117px;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+.club-info {
+  margin-left: 16px;
+}
+.club-title {
+  font-size: 20px;
+}
+.club-author {
+  color: #9f9f9f;
+  font-size: 16px;
+}
+.club-author a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #562eff;
+}
+.clubs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.tournaments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+.tournament {
+  width: 253px;
+  border-radius: 5px;
+  box-shadow: 5px 10px rgb(209, 209, 209);
+  border: 1px solid;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.tournament-banner img {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding-left: 27px;
+}
+.tournament .tournament-banner img {
+  width: 200px;
+  height: 114px;
+}
+.tournament-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+#s1 {
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    flex-direction: column;
+  }
+  .clubs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .club {
+    flex-direction: column;
+  }
+  .tournaments {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tournament {
+    flex-direction: column;
+  }
+}
+
+@media only screen and(min-width:689px) and (max-width: 922px) {
+}
