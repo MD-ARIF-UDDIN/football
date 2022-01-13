@@ -3,6 +3,21 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
 }
+/* .nav-bar li {
+  display: flex;
+  flex-direction: column;
+}
+.nav-bar li {
+  list-style: none;
+} */
+.header {
+  color: #562eff;
+  background-image: url(image/head.jpg);
+  text-align: center;
+  height: 50px;
+  border: 1px solid #562eff;
+  border-radius: 10px;
+}
 .container {
   background-color: #ffffff;
   width: 870px;
@@ -31,9 +46,13 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 30px;
+  grid-column-gap: 5px;
 }
 .player {
   display: flex;
+  border: 1px solid #562eff;
+  box-shadow: 4px 8px #562eff;
+  border-radius: 5px;
   align-items: center;
 }
 .player img {
@@ -48,6 +67,9 @@ hr {
 }
 .club {
   display: flex;
+  border: 1px solid black;
+  box-shadow: 4px 8px #562eff;
+  border-radius: 5px;
 }
 .club img {
   width: 150px;
@@ -74,6 +96,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 26px;
+  grid-column-gap: 10px;
 }
 .tournaments {
   display: grid;
@@ -83,13 +106,13 @@ hr {
 .tournament {
   width: 253px;
   border-radius: 5px;
-  box-shadow: 5px 10px rgb(209, 209, 209);
+  box-shadow: 5px 10px #562eff;
   border: 1px solid;
   padding: 5px;
   background-color: rgb(255, 255, 255);
 }
 .tournament-banner img {
-  border: 1px solid #ffffff;
+  border: 1px solid #562eff;
   border-radius: 5px;
   padding-left: 27px;
 }
@@ -110,6 +133,14 @@ hr {
 }
 #s1 {
   padding-left: 15px;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  background-color: #562eff;
 }
 
 @media only screen and (max-width: 688px) {
